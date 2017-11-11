@@ -1,8 +1,13 @@
 def hello_t(array)
-  array.each do |x|
-    yield x
+  if block_given?
+    array.each do |x|
+      yield x
+    end
+  return array
   end
-return array
+  else 
+    puts "Hey! No block was given!"
+  end
 end
 
 
