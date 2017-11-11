@@ -1,10 +1,9 @@
 def hello_t(array)
   array.each do |x|
-    yield 
+    yield
   end
 end
 
 
 
 # call your method here!
-
